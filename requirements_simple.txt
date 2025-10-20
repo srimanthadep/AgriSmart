@@ -1,0 +1,12 @@
+Flask==2.3.3
+Flask-CORS==4.0.0
+Flask-Limiter==3.5.0
+Flask-Compress==1.14
+Flask-Talisman==1.1.0
+scikit-learn==1.3.0
+pandas==2.0.3
+numpy==1.24.3
+joblib==1.3.2
+requests==2.31.0
+python-dotenv==1.0.0
+Werkzeug==2.3.7

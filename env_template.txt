@@ -1,0 +1,47 @@
+# Flask Configuration
+FLASK_APP=app.py
+FLASK_ENV=development
+SECRET_KEY=your-super-secret-key-change-this-in-production
+DEBUG=True
+
+# Database Configuration
+DATABASE_URL=postgresql://username:password@localhost:5432/agrismart_db
+SQLALCHEMY_DATABASE_URI=postgresql://username:password@localhost:5432/agrismart_db
+SQLALCHEMY_TRACK_MODIFICATIONS=False
+
+# Redis Configuration
+REDIS_URL=redis://localhost:6379/0
+CELERY_BROKER_URL=redis://localhost:6379/0
+CELERY_RESULT_BACKEND=redis://localhost:6379/0
+
+# JWT Configuration
+JWT_SECRET_KEY=your-jwt-secret-key-change-this-in-production
+JWT_ACCESS_TOKEN_EXPIRES=3600
+JWT_REFRESH_TOKEN_EXPIRES=2592000
+
+# External APIs
+OPENWEATHER_API_KEY=your-openweather-api-key
+WEATHER_BASE_URL=http://api.openweathermap.org/data/2.5
+
+# Email Configuration
+MAIL_SERVER=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USE_TLS=True
+MAIL_USERNAME=your-email@gmail.com
+MAIL_PASSWORD=your-app-password
+
+# Security
+BCRYPT_LOG_ROUNDS=12
+SESSION_COOKIE_SECURE=False
+SESSION_COOKIE_HTTPONLY=True
+REMEMBER_COOKIE_SECURE=False
+REMEMBER_COOKIE_HTTPONLY=True
+
+# Monitoring
+SENTRY_DSN=your-sentry-dsn
+PROMETHEUS_MULTIPROC_DIR=/tmp
+
+# File Upload
+MAX_CONTENT_LENGTH=16777216
+UPLOAD_FOLDER=uploads/
+ALLOWED_EXTENSIONS=png,jpg,jpeg,gif,pdf,txt
