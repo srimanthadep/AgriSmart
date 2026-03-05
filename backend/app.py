@@ -11,7 +11,12 @@ import time
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=[
+    'https://agrismart.srimanth.me',
+    'http://localhost:3000',
+    'http://localhost:5000',
+    'http://127.0.0.1:5500',
+])
 
 # Load model and scaler (paths relative to this file)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
